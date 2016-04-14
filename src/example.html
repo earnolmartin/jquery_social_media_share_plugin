@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Social Share Plugin Test</title>
+		<meta content="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" property="og:image">
+		<meta content="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" property="twitter:image">
+		<META Name="Description" Content="My Cool Site I Am Sharing">
+		<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+		<script type="text/javascript" src="simple_social_share.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="simple_social_share.min.css">
+		<script type="text/javascript">
+			$( document ).ready(function() {
+				//$("div.shareThis").simpleSocialShare();
+				// $("div.shareThis").simpleSocialShare({sites: "email,facebook,google", url: "http://www.google.com", title: "Google", description: "Father of the Internet", image: "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png", shareType: "button", triggerButtonActiveState: true, buttonSide: "right", orientation: "horizontal"});
+				//$("div.shareThis").simpleSocialShare({sites: "twitter,google,facebook", url: "http://www.google.com", title: "Google", description: "Father of the Internet", image: "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png", shareType: "none", buttonSide: "right", orientation: "vertical"});
+				$("div.shareThis").simpleSocialShare({sites: "", url: "http://www.google.com", title: "Google", description: "Father of the Internet", image: "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png", shareType: "button", triggerButtonActiveState: false, buttonSide: "left", orientation: "horizontal"});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="shareThis">
+			
+		</div>
+	</body>
+</html>
