@@ -1,3 +1,4 @@
+/* Plugin Created By Eric Arnol-Martin (earnolmartin@gmail.com) */
 (function ( $ ) {
 	$.fn.simpleSocialShare = function( options ) {
 		
@@ -75,7 +76,11 @@
 		});
 		
 		function openWindow(url){
-			window.open(url, "_blank", "height=480,width=640,location=1,status=1,scrollbars=1");
+			var width = 640;
+			var height = 480;
+			var left = (screen.width/2)-(width/2);
+			var top = (screen.height/2)-(height/2);
+			window.open(url, "_blank", "height=" + height + ",width=" + width + ",location=1,status=1,scrollbars=1,top=" + top + ",left=" + left);
 		}
 		
 		function buildShareButtonTextNoneHTML(instance){
@@ -142,12 +147,13 @@
 							loadFacebookSDKIfNeeded();
 							$(instance).on('click', 'li.simpleSocialShare' + capitalizedSocialNetwork, function() {							
 								if(window.FB){
+									// Use non-encodeURIComponent URLS for FB
 									FB.ui({
 										method: 'feed',
-										name: shareTitle,
-										link: shareURL,
-										picture: shareImage,
-										description: shareDesc,
+										name: settings.title,
+										link: settings.url,
+										picture: settings.image,
+										description: settings.description,
 									});
 								}else{
 									openWindow("https://www.facebook.com/sharer/sharer.php?u=" + shareURL);

@@ -83,3 +83,6 @@ none
 - Firefox
 - Chrome
 - Safari
+
+### Screenshot:
+![Alt text](simpleSocialShare.png?raw=true "Social Media Sharing Plugin Screenshot")
