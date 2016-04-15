@@ -84,5 +84,9 @@ none
 - Chrome
 - Safari
 
+### Live Demo:
+[See Simple Share Plugin in Action](http://eamster.tk/share_plugin/)
+
+
 ### Screenshot:
 ![Alt text](simpleSocialShare.png?raw=true "Social Media Sharing Plugin Screenshot")
