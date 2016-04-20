@@ -78,7 +78,7 @@ none
 ```
 
 ### Supported Browsers:
-- IE 9-11+
+- IE 8-11+
 - Edge
 - Firefox
 - Chrome
