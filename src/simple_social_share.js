@@ -18,7 +18,7 @@
 		}, options );
 		
 		// Supported buttons
-		var supportedSites = new Array('facebook', 'twitter', 'google', 'linkedin', 'reddit', 'pinterest', 'whatsapp', 'email');
+		var supportedSites = new Array('facebook', 'twitter', 'google', 'linkedin', 'reddit', 'pinterest', 'whatsapp', 'email', 'print');
 		var socialMediaButtonsToRun = new Array();
 		
 		// Variables
@@ -192,6 +192,11 @@
 						case "email":
 							$(instance).on('click', 'li.simpleSocialShare' + capitalizedSocialNetwork, function() {							
 								location.href="mailto:?subject=" + shareTitle + "&body=" + shareDesc + " " + shareURL;
+							});
+							break;
+							case "print":
+							$(instance).on('click', 'li.simpleSocialShare' + capitalizedSocialNetwork, function() {							
+								window.print();
 							});
 							break;
 					}

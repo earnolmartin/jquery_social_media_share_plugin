@@ -223,4 +223,19 @@ li.simpleSocialShareEmail:hover{
 	/* IE8 and below fallback hack*/
     background: #42c5b0 url("smsp_icons/email_black.png") no-repeat center center\9; 
 }
+/* Print */
+li.simpleSocialSharePrint{
+  background: #C0C0C0
+  url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJNMTQgMjBoLTZ2LTFoNnYxem0xMC0xNXYxM2gtNHY2aC0xNnYtNmgtNHYtMTNoNHYtNWgxNnY1aDR6bS02IDEwaC0xMnY3aDEydi03em0wLTEzaC0xMnYzaDEydi0zem00IDUuNWMwLS4yNzYtLjIyNC0uNS0uNS0uNXMtLjUuMjI0LS41LjUuMjI0LjUuNS41LjUtLjIyNC41LS41em0tNiA5LjVoLTh2MWg4di0xeiIvPjwvc3ZnPg==)
+  no-repeat center center;
+  /* IE8 and below fallback hack*/
+    background: #C0C0C0 url("smsp_icons/printer_white.png") no-repeat center center\9; 
+}
+li.simpleSocialSharePrint:hover{
+  background-image: 
+  url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTQgMjBoLTZ2LTFoNnYxem0xMC0xNXYxM2gtNHY2aC0xNnYtNmgtNHYtMTNoNHYtNWgxNnY1aDR6bS02IDEwaC0xMnY3aDEydi03em0wLTEzaC0xMnYzaDEydi0zem00IDUuNWMwLS4yNzYtLjIyNC0uNS0uNS0uNXMtLjUuMjI0LS41LjUuMjI0LjUuNS41LjUtLjIyNC41LS41em0tNiA5LjVoLTh2MWg4di0xeiIvPjwvc3ZnPg==);
+  transition: background-image 0.3s ease-in-out; /* Chrome or Opera Only */
+  /* IE8 and below fallback hack*/
+    background: #C0C0C0 url("smsp_icons/printer_black.png") no-repeat center center\9; 
+}
 
