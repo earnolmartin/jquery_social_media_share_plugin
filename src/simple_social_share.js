@@ -194,7 +194,7 @@
 								location.href="mailto:?subject=" + shareTitle + "&body=" + shareDesc + " " + shareURL;
 							});
 							break;
-							case "print":
+						case "print":
 							$(instance).on('click', 'li.simpleSocialShare' + capitalizedSocialNetwork, function() {							
 								window.print();
 							});
