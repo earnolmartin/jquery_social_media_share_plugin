@@ -146,7 +146,7 @@
 						case "facebook":
 							loadFacebookSDKIfNeeded();
 							$(instance).on('click', 'li.simpleSocialShare' + capitalizedSocialNetwork, function() {							
-								if(window.FB){
+								if(window.FB && settings.facebookAppId != ""){
 									// Use non-encodeURIComponent URLS for FB
 									FB.ui({
 										method: 'feed',
@@ -208,15 +208,13 @@
 		}
 		
 		function loadFacebookSDKIfNeeded(){
-			if (!window.FB){
-				if(settings.facebookAppId != ""){
-					$.getScript('https://connect.facebook.net/en_US/sdk.js', function(){
-						FB.init({
-						  appId: settings.facebookAppId,
-						  version: 'v2.5' // or v2.0, v2.1, v2.2, v2.3
-						});  
-					});
-				}
+			if (!window.FB && settings.facebookAppId != ""){
+				$.getScript('https://connect.facebook.net/en_US/sdk.js', function(){
+					FB.init({
+						appId: settings.facebookAppId,
+						version: 'v2.5' // or v2.0, v2.1, v2.2, v2.3
+					});  
+				});
 			}
 		}
 		
